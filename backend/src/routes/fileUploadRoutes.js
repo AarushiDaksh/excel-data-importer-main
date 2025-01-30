@@ -1,10 +1,10 @@
-import express from "express";
-import multer from "multer";
-import { uploadFile } from "../controllers/fileUploadController.js";
-
+const express = require("express");
 const router = express.Router();
-const upload = multer({ dest: "uploads/" });
+// Import other necessary modules using require()
 
-router.post("/", upload.single("file"), uploadFile);
+// Define routes
+router.post("/upload", (req, res) => {
+  // Your route logic here
+});
 
-export default router;
+module.exports = router;

@@ -1,8 +1,8 @@
-import express from "express";
-import cors from "cors";
-import connectDB from "./config/db.js";
-import fileUploadRoutes from "./routes/fileUploadRoutes.js";
-import dotenv from "dotenv";
+const express = require("express");
+const cors = require("cors");
+const dotenv = require("dotenv");
+const connectDB = require("./config/db");
+const fileUploadRoutes = require("./routes/fileUploadRoutes");
 
 dotenv.config();
 connectDB();
